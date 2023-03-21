@@ -1,0 +1,60 @@
+// responsible for styleing nav bar
+@use'../config' as *;
+
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.primary-menu{
+    .navbar-accordion{
+        position: static;
+    }
+    .navbar-toggler{
+        border: none;
+        i{
+           color: $black;
+        }
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .navbar-collapse{
+        @include media-breakpoint-down(lg){
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: $white;
+        }
+    }
+
+    .navbar-nav{
+        li{
+            a{
+                color: $black;
+                @include media-breakpoint-down(lg){
+                    padding: 1rem;
+                    border-bottom: 1px solid $gray-200;
+                }
+                
+            }
+        }
+    }
+}
+
+.nav-social{
+    a{
+        i{
+            font-size: 1.5rem;
+            color: $black;
+            &:hover{
+               scale: 1.5;
+               color: $primary;
+            }
+        }
+    }
+}

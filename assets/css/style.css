@@ -10769,5 +10769,49 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.primary-menu .navbar-accordion {
+  position: static;
+}
+.primary-menu .navbar-toggler {
+  border: none;
+}
+.primary-menu .navbar-toggler i {
+  color: #000;
+}
+.primary-menu .navbar-toggler:focus {
+  box-shadow: none;
+}
+@media (max-width: 991.98px) {
+  .primary-menu .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+}
+.primary-menu .navbar-nav li a {
+  color: #000;
+}
+@media (max-width: 991.98px) {
+  .primary-menu .navbar-nav li a {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+}
+
+.nav-social a i {
+  font-size: 1.5rem;
+  color: #000;
+}
+.nav-social a i:hover {
+  scale: 1.5;
+  color: #d1b607;
+}
 
 /*# sourceMappingURL=style.css.map */
